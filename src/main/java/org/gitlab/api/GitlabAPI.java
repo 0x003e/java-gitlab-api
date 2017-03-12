@@ -636,7 +636,7 @@ public class GitlabAPI {
      * @throws IOException
      */
     public List<GitlabProject> getAllProjects() throws IOException {
-        String tailUrl = GitlabProject.URL + "/all" + PARAM_MAX_ITEMS_PER_PAGE;
+        String tailUrl = GitlabProject.URL;
         return retrieve().getAll(tailUrl, GitlabProject[].class);
     }
 
